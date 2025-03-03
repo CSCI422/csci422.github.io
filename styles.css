@@ -17,6 +17,11 @@ a {
     color: #E83F6F !important;
 }
 
+.footer {
+    background-color: #5438DC;
+    color: white;
+}
+
 .padding {
     padding: 50px;
 }
@@ -40,7 +45,7 @@ a {
 
 body {
     min-height: 100vh;
-    background-color: blueviolet;
+    background-color: #5438DC;
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
