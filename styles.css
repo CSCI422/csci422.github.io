@@ -1,85 +1,145 @@
-.hero {
-    color: #FCF7FF;
-    font-family: "Instrument Sans", serif;
-    background-image: url("./assets/sparkles.png");
-    background-size: contain;
-    height: 100%;
-    background-color: #5438DC;
-    padding-top: 15vh !important;
-    padding-bottom: 15vh !important;
+/* blue: #0096b4 */
+/* yellow: #f7cb15 */
+/* pink: #ed254e */
+
+.breadcrumbs {
+  background-color: #ed254e;
+  height: 100px;
+  display: flex;
+  padding-left: 2%;
+  margin-bottom: 2%;
 }
 
-p {
-    margin-bottom: 0 !important;
+.breadcrumbs p {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-a {
-    color: #E83F6F !important;
+.navbar {
+  background-color: #ed254e;
+  height: 100px;
+  display: flex;
+  gap: 30px;
+  padding-top: 2.5%;
+  padding-left: 5%;
+  margin-bottom: 2%;
 }
 
-.footer {
-    background-color: #5438DC;
-    color: white;
-}
-
-.padding {
-    padding: 50px;
-}
-
-.secondary-light {
-    background-color: ghostwhite;
-}
-
-.container-content {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.navbar a,
+.navbar h1 {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 body {
-    min-height: 100vh;
-    background-color: #5438DC;
-
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
+  margin: 0;
 }
 
-/* Fade In Animations */
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.image {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.paragraph {
+  padding: 0px 20px;
+  text-align: center;
 }
 
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.resources {
+  text-align: right;
+  background-color: #f7cb15;
+  color: #ed254e;
+  overflow: scroll;
+  height: 133px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.resources a {
+  color: #ed254e;
 }
 
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.assignment {
+    padding: 1rem;   
+    background-color: #f7cb15;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .footer {
+    background-color: #0096b4;
+    height: 20vh;
+    bottom: 10px;
+    right: -9px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .navbar {
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* above phone sizes */
+  .footer {
+    background-color: #0096b4;
+    height: 20vh;
+  }
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 2%;
+  margin-left: 90%;
+}
+
+#bad-exit-button {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+}
+
+#bad-continue-button {
+  background-color: darkgray;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+}
+
+/* Popup */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
 }
